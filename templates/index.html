@@ -1,0 +1,54 @@
+{% extends "base.html" %} {% block content %}
+
+<h2 style="color:red" ><strong>What is the Importance of detecting iceberg ?</strong></h2>
+<p class="moveleft">Icebergs present serious hazards for ship navigation and offshore installations. Consequently, there is a large interest to localize them timely and over vast areas. Because of their independence of cloud cover and daylight, satellite Synthetic Aperture Radar (SAR) images are among the preferred data sources for operational ice conditions and iceberg occurrences. </p>
+<h2  class="moveright" style="color:yellow">What is the need to detect Iceberg?</h2>
+<marquee behavior="scroll" direction="left" class="moveright">The methods of satellite monitoring of dangerous ice formations, like icebergs in the Arctic seas represent a threat to the safety of navigation and economic activity on the Arctic shelf.</marquee>
+
+<br>
+<br>
+<br>
+
+<h2 style="color:blue">Images of <strong> Ship</strong> hitting<strong> Iceberg</strong></h2> 
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTOLveW5N5bKvw_Pm3hsE0_fyieNhMfAPKWfQ&usqp=CAU",alt="img1">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ8y445Rd08FK4-Mto3xvqkt3MKf4fxA9q1pA&usqp=CAU",alt="img2">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQmReYH5G3ea8abgPrvjRB16vtNbBgo_Aj5HQ&usqp=CAU",alt="img3">
+<br>
+<br>
+<br>
+<h2> Detect</h2>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQlsQMi3IG1VVuYIgG2l6RP78_h_cBMr8mA8A&usqp=CAU",alt="ice">
+<p style="color:yellow"><strong>ICE</strong><br> <em>OR</em><br><strong>SHIP</strong></p>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT2vejUS44qNmWxka7-Vp-ReT47eRI48TTOJQ&usqp=CAU",alt="ship">
+</div>
+<br>
+<br>
+<h4 style="color:#FFA50">Upload Image Here</h4>
+<div>
+    <form id="upload-file" method="post" enctype="multipart/form-data">
+        <label for="imageUpload" class="upload-label">
+            Choose...
+        </label>
+        <input type="file" name="file" id="imageUpload" accept=".png, .jpg, .jpeg">
+    </form>
+
+    <div class="image-section" style="display:none;">
+        <div class="img-preview">
+            <div id="imagePreview">
+            </div>
+        </div>
+        <div>
+            <button type="button" class="btn btn-primary btn-lg " id="btn-predict">Predict!</button>
+        </div>
+    </div>
+
+    <div class="loader" style="display:none;"></div>
+
+    <h3 id="result">
+        <span> </span>
+    </h3>
+	
+
+</div>
+
+{% endblock %}
